@@ -35,6 +35,7 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
+    'breathe',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -335,3 +336,12 @@ texinfo_documents = [
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #
 # texinfo_no_detailmenu = False
+
+
+#
+# URIVAN: Adding breathe configuration to use Doxygen C documentation
+# extracted from C code.
+#
+breathe_projects = { "PaparazziUAV": "../" }
+breathe_default_project = "PaparazziUAV"
+
